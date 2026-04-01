@@ -1,0 +1,52 @@
+# Build directories
+build/
+cmake-build-*/
+out/
+
+# Compiled objects
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.so.*
+*.dylib
+*.dll
+*.exe
+
+# CMake generated files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+install_manifest.txt
+CTestTestfile.cmake
+_deps/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Doxygen
+docs/html/
+docs/latex/
+
+# Valgrind
+vgcore.*
+callgrind.out.*
+massif.out.*
+
+# Test binaries
+tests/run_tests
+
+# Coverage
+*.gcno
+*.gcda
+*.gcov
+coverage/
+lcov.info
