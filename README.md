@@ -1,6 +1,6 @@
 # 🚀 interview-data-structures
 
-> A comprehensive C++17 reference for data structures and algorithms — built for technical interview preparation at top tech companies.
+> Полный справочник по структурам данных и алгоритмам на C++17 — для подготовки к техническим собеседованиям в лучших IT-компаниях.
 
 [![C++17](https://img.shields.io/badge/C++-17-blue.svg)](https://en.cppreference.com/w/cpp/17)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
@@ -8,64 +8,64 @@
 
 ---
 
-## 📋 Table of Contents
+## 📋 Содержание
 
-- [Overview](#overview)
-- [Data Structures](#data-structures)
-- [Algorithms](#algorithms)
-- [Quick Start](#quick-start)
-- [Project Structure](#project-structure)
-- [Interview Preparation Guide](#interview-preparation-guide)
-- [Contributing](#contributing)
-
----
-
-## Overview
-
-This repository contains **production-quality** implementations of all major data structures and algorithms you will encounter in software engineering interviews. Every implementation:
-
-- Is written in **C++17** with full template support
-- Follows **Google C++ Style Guide**
-- Includes **Doxygen-style comments**
-- Has **unit tests** with Google Test
-- Comes with **interview patterns** and real question examples
-- Is **valgrind-clean** (no memory leaks)
+- [Обзор](#обзор)
+- [Структуры данных](#структуры-данных)
+- [Алгоритмы](#алгоритмы)
+- [Быстрый старт](#быстрый-старт)
+- [Структура проекта](#структура-проекта)
+- [Гайд по подготовке к собеседованиям](#гайд-по-подготовке-к-собеседованиям)
+- [Контрибьютинг](#контрибьютинг)
 
 ---
 
-## Data Structures
+## Обзор
 
-| Structure | Frequency | Companies | Difficulty |
-|-----------|-----------|-----------|------------|
-| [Arrays](src/data_structures/arrays/) | ⭐⭐⭐⭐⭐ 95% | All | Easy–Hard |
-| [Linked Lists](src/data_structures/linked_lists/) | ⭐⭐⭐⭐⭐ 85% | Google, Meta, Amazon | Easy–Medium |
-| [Stacks & Queues](src/data_structures/stacks_queues/) | ⭐⭐⭐⭐ 80% | All | Easy–Medium |
-| [Hash Tables](src/data_structures/hash_tables/) | ⭐⭐⭐⭐⭐ 90% | All | Easy–Hard |
-| [Trees (BST/AVL)](src/data_structures/trees/) | ⭐⭐⭐⭐⭐ 88% | Google, Apple, Microsoft | Medium–Hard |
-| [Graphs](src/data_structures/graphs/) | ⭐⭐⭐⭐ 75% | Google, Facebook, Uber | Medium–Hard |
-| [Heaps](src/data_structures/heaps/) | ⭐⭐⭐⭐ 70% | Amazon, Google | Medium |
-| [Tries](src/data_structures/tries/) | ⭐⭐⭐ 55% | Google, Airbnb | Medium–Hard |
+Этот репозиторий содержит **production-quality** реализации всех основных структур данных и алгоритмов, которые вы встретите на собеседованиях в IT-компаниях. Каждая реализация:
+
+- Написана на **C++17** с полной поддержкой шаблонов
+- Следует **Google C++ Style Guide**
+- Включает **Doxygen-style комментарии**
+- Имеет **unit тесты** с Google Test
+- Поставляется с **паттернами для интервью** и реальными примерами вопросов
+- **Valgrind-clean** (без утечек памяти)
+
+---
+
+## Структуры данных
+
+| Структура | Частота | Компании | Сложность |
+|-----------|---------|----------|-----------|
+| [Массивы](src/data_structures/arrays/) | ⭐⭐⭐⭐⭐ 95% | Все | Easy–Hard |
+| [Связные списки](src/data_structures/linked_lists/) | ⭐⭐⭐⭐⭐ 85% | Google, Meta, Amazon | Easy–Medium |
+| [Стеки и очереди](src/data_structures/stacks_queues/) | ⭐⭐⭐⭐ 80% | Все | Easy–Medium |
+| [Хеш-таблицы](src/data_structures/hash_tables/) | ⭐⭐⭐⭐⭐ 90% | Все | Easy–Hard |
+| [Деревья (BST/AVL)](src/data_structures/trees/) | ⭐⭐⭐⭐⭐ 88% | Google, Apple, Microsoft | Medium–Hard |
+| [Графы](src/data_structures/graphs/) | ⭐⭐⭐⭐ 75% | Google, Facebook, Uber | Medium–Hard |
+| [Кучи](src/data_structures/heaps/) | ⭐⭐⭐⭐ 70% | Amazon, Google | Medium |
+| [Префиксные деревья (Trie)](src/data_structures/tries/) | ⭐⭐⭐ 55% | Google, Airbnb | Medium–Hard |
 | [Union-Find](src/data_structures/union_find/) | ⭐⭐⭐ 50% | Google, Amazon | Medium |
-| [Bit Manipulation](src/data_structures/bit_manipulation/) | ⭐⭐⭐ 45% | Low-level / Systems | Easy–Medium |
+| [Битовые операции](src/data_structures/bit_manipulation/) | ⭐⭐⭐ 45% | Low-level / Системное ПО | Easy–Medium |
 
 ---
 
-## Algorithms
+## Алгоритмы
 
-| Algorithm | Frequency | Notes |
-|-----------|-----------|-------|
-| [Sorting](src/algorithms/sorting/) | ⭐⭐⭐⭐⭐ | QuickSort, MergeSort, HeapSort |
-| [Binary Search](src/algorithms/searching/) | ⭐⭐⭐⭐⭐ | Variants, rotated arrays |
-| [Dynamic Programming](src/algorithms/dynamic_programming/) | ⭐⭐⭐⭐⭐ | Memoization, tabulation |
-| [Greedy](src/algorithms/greedy/) | ⭐⭐⭐⭐ | Intervals, scheduling |
-| [Backtracking](src/algorithms/backtracking/) | ⭐⭐⭐⭐ | Permutations, N-Queens |
-| [Two Pointers](src/algorithms/two_pointers/) | ⭐⭐⭐⭐⭐ | Sliding window, fast/slow |
+| Алгоритм | Частота | Описание |
+|----------|---------|---------|
+| [Сортировка](src/algorithms/sorting/) | ⭐⭐⭐⭐⭐ | QuickSort, MergeSort, HeapSort |
+| [Бинарный поиск](src/algorithms/searching/) | ⭐⭐⭐⭐⭐ | Варианты, ротированные массивы |
+| [Динамическое программирование](src/algorithms/dynamic_programming/) | ⭐⭐⭐⭐⭐ | Мемоизация, табуляция |
+| [Жадные алгоритмы](src/algorithms/greedy/) | ⭐⭐⭐⭐ | Интервалы, планирование |
+| [Backtracking](src/algorithms/backtracking/) | ⭐⭐⭐⭐ | Перестановки, N-ферзей |
+| [Два указателя](src/algorithms/two_pointers/) | ⭐⭐⭐⭐⭐ | Скользящее окно, быстрый/медленный |
 
 ---
 
-## Quick Start
+## Быстрый старт
 
-### Prerequisites
+### Требования
 
 ```bash
 # macOS
@@ -75,7 +75,7 @@ brew install cmake googletest
 sudo apt-get install cmake libgtest-dev
 ```
 
-### Build & Run
+### Сборка и запуск
 
 ```bash
 git clone https://github.com/yourname/interview-data-structures.git
@@ -85,7 +85,7 @@ mkdir build && cd build
 cmake .. -DCMAKE_BUILD_TYPE=Release
 make -j$(nproc)
 
-# Run all examples
+# Запустить все примеры
 ./examples_arrays
 ./examples_linked_lists
 ./examples_trees
@@ -95,13 +95,13 @@ make -j$(nproc)
 ./examples_sorting
 ./examples_dp
 
-# Run tests
+# Запустить тесты
 ctest --output-on-failure
-# or directly
+# или напрямую
 ./tests/run_tests
 ```
 
-### Run a single example
+### Запустить один пример
 
 ```bash
 cd build
@@ -111,7 +111,7 @@ make examples_arrays
 
 ---
 
-## Project Structure
+## Структура проекта
 
 ```
 interview-data-structures/
@@ -121,68 +121,68 @@ interview-data-structures/
 ├── .gitignore
 ├── CMakeLists.txt
 ├── docs/
-│   ├── interview-frequency.md     # How often each topic appears
-│   ├── complexity-cheatsheet.md   # Big-O reference table
-│   ├── cpp-tips.md                # C++ specific interview tips
-│   └── tips-and-tricks.md        # General interview strategy
+│   ├── interview-frequency.md     # Как часто каждая тема встречается
+│   ├── complexity-cheatsheet.md   # Таблица Big-O
+│   ├── cpp-tips.md                # Советы по C++ для интервью
+│   └── tips-and-tricks.md        # Общие стратегии для собеседования
 ├── src/
-│   ├── data_structures/           # 10 core data structures
-│   └── algorithms/                # 6 algorithm categories
-├── tests/                         # Google Test unit tests
+│   ├── data_structures/           # 10 основных структур данных
+│   └── algorithms/                # 6 категорий алгоритмов
+├── tests/                         # Google Test unit тесты
 └── interview_questions/
-    ├── easy.md                    # LeetCode Easy with solutions
-    ├── medium.md                  # LeetCode Medium with solutions
-    └── hard.md                    # LeetCode Hard with solutions
+    ├── easy.md                    # LeetCode Easy с решениями
+    ├── medium.md                  # LeetCode Medium с решениями
+    └── hard.md                    # LeetCode Hard с решениями
 ```
 
 ---
 
-## Interview Preparation Guide
+## Гайд по подготовке к собеседованиям
 
-### 4-Week Study Plan
+### План подготовки на 4 недели
 
-**Week 1 — Foundations**
-- Arrays, Strings, Hash Tables (95% interview frequency)
-- Two Pointers, Sliding Window patterns
-- Practice: 10 Easy + 5 Medium problems
+**Неделя 1 — Основы**
+- Массивы, строки, хеш-таблицы (95% частота на собесах)
+- Паттерны "два указателя" и "скользящее окно"
+- Практика: 10 Easy + 5 Medium задач
 
-**Week 2 — Linear Structures**
-- Linked Lists, Stacks, Queues
-- Recursion fundamentals
-- Practice: 5 Easy + 10 Medium problems
+**Неделя 2 — Линейные структуры**
+- Связные списки, стеки, очереди
+- Основы рекурсии
+- Практика: 5 Easy + 10 Medium задач
 
-**Week 3 — Tree Structures**
-- Binary Trees, BST, Heaps
-- DFS / BFS traversals
-- Practice: 15 Medium problems
+**Неделя 3 — Древовидные структуры**
+- Бинарные деревья, BST, кучи
+- Обходы DFS / BFS
+- Практика: 15 Medium задач
 
-**Week 4 — Advanced Topics**
-- Graphs (BFS/DFS/Dijkstra), Dynamic Programming
+**Неделя 4 — Продвинутые темы**
+- Графы (BFS/DFS/Dijkstra), динамическое программирование
 - Tries, Union-Find, Backtracking
-- Practice: 10 Medium + 5 Hard problems
+- Практика: 10 Medium + 5 Hard задач
 
-### How to Use This Repo
+### Как использовать этот репозиторий
 
-1. Read the `README.md` in each data structure folder
-2. Study the `.hpp` implementation — understand every method
-3. Read `patterns.md` to learn the most common interview patterns
-4. Run and modify `examples.cpp`
-5. Solve the problems listed in `interview_questions/`
-
----
-
-## Documentation
-
-| Document | Description |
-|----------|-------------|
-| [Interview Frequency](docs/interview-frequency.md) | Topic frequency by company and level |
-| [Complexity Cheatsheet](docs/complexity-cheatsheet.md) | All Big-O complexities in one place |
-| [C++ Tips](docs/cpp-tips.md) | STL usage, RAII, common pitfalls |
-| [Tips & Tricks](docs/tips-and-tricks.md) | Interview communication strategies |
+1. Прочитайте `README.md` в папке каждой структуры данных
+2. Изучите реализацию в `.hpp` — поймите каждый метод
+3. Прочитайте `patterns.md` чтобы выучить самые частые паттерны
+4. Запустите и модифицируйте `examples.cpp`
+5. Решите задачи из `interview_questions/`
 
 ---
 
-## Sample Interview Questions
+## Документация
+
+| Документ | Описание |
+|----------|---------|
+| [Частота на собесах](docs/interview-frequency.md) | Частота тем по компаниям и уровням |
+| [Таблица сложности](docs/complexity-cheatsheet.md) | Все Big-O сложности в одном месте |
+| [Советы по C++](docs/cpp-tips.md) | Использование STL, RAII, частые ошибки |
+| [Советы и трюки](docs/tips-and-tricks.md) | Стратегии коммуникации на собеседовании |
+
+---
+
+## Примеры собес-вопросов
 
 ```
 Easy:   Two Sum, Valid Parentheses, Merge Two Sorted Lists
@@ -190,16 +190,16 @@ Medium: LRU Cache, Binary Tree Level Order, Number of Islands
 Hard:   Serialize/Deserialize Binary Tree, Word Ladder, Median of Data Streams
 ```
 
-See [interview_questions/](interview_questions/) for full solutions with explanations.
+Полные решения с объяснениями смотрите в [interview_questions/](interview_questions/).
 
 ---
 
-## Contributing
+## Контрибьютинг
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+Смотрите [CONTRIBUTING.md](CONTRIBUTING.md) для гайдлайнов.
 
 ---
 
-## License
+## Лицензия
 
-MIT — see [LICENSE](LICENSE).
+MIT — смотрите [LICENSE](LICENSE).
